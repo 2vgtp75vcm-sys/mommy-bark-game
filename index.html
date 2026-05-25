@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tall Mommy's Forest</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background: linear-gradient(#0a1f0a, #1a0033); 
+            color: #ff99cc; 
+            text-align: center; 
+            padding: 30px; 
+            margin: 0;
+        }
+        h1 { color: #ff66aa; font-size: 2.4em; }
+        button { 
+            background: #9900cc; 
+            color: white; 
+            padding: 20px 45px; 
+            font-size: 24px; 
+            border: none; 
+            border-radius: 12px; 
+            cursor: pointer; 
+            margin: 25px;
+        }
+        button:hover { background: #ff00aa; transform: scale(1.08); }
+        #scene { 
+            margin: 40px auto; 
+            max-width: 850px; 
+            font-size: 1.3em; 
+            line-height: 1.8; 
+            background: rgba(0,0,0,0.6); 
+            padding: 40px; 
+            border-radius: 15px; 
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>🌲 Tall Dominant Mommy in the Forest 🌲</h1>
+    <button onclick="summonMommy()">Walk Deeper Into The Forest</button>
+    <div id="scene"></div>
+
+    <script>
+        const ties = ["wrists tightly bound behind your back with soft pink rope","spread-eagle between two trees","hogtied firmly on the mossy ground","suspended in a full body rope harness","forced into a tight ball tie","arms locked in reverse prayer","blindfolded and chained to a tree","thighs tied together with arms pinned"];
+        
+        const actions = ["teasing and playing with your helpless body","smothering you with her thick soft ass","pressing her large heavy breasts against your face"];
+        
+        const holds = ["cradling you in her lap","pinning you under her full weight","carrying you over her shoulder","spooning you tightly from behind","holding you in a full nelson"];
+
+        function summonMommy() {
+            const tie = ties[Math.floor(Math.random() * ties.length)];
+            const action = actions[Math.floor(Math.random() * actions.length)];
+            const hold = holds[Math.floor(Math.random() * holds.length)];
+            
+            document.getElementById('scene').innerHTML = `
+                <p>A tall, dominant Mommy silently sneaks up behind you in the dark forest...</p>
+                <p>She grabs you, covers your mouth, and whispers: "Shhh... you're mine now, puppy."</p>
+                <p>She ties you up tightly... <strong>${tie}</strong>.</p>
+                <p>Then she dominates you with <strong>${action}</strong>.</p>
+                <p>Finally she holds you close... <strong>${hold}</strong>.</p>
+                <p>"Good boy... Mommy's keeping you forever."</p>
+                <button onclick="summonMommy()">New Scene</button>
+            `;
+        }
+    </script>
+</body>
+</html>
