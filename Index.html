@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tall Mommy's Forest Game</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background: linear-gradient(#0a1f0a, #1a0033); 
+            color: #ff99cc; 
+            text-align: center; 
+            padding: 20px; 
+            margin: 0;
+        }
+        h1 { color: #ff66aa; font-size: 2.2em; }
+        button { 
+            background: #9900cc; 
+            color: white; 
+            padding: 18px 40px; 
+            font-size: 22px; 
+            border: none; 
+            border-radius: 12px; 
+            cursor: pointer; 
+            margin: 20px;
+        }
+        button:hover { background: #ff00aa; transform: scale(1.05); }
+        #scene { 
+            margin: 30px auto; 
+            max-width: 800px; 
+            font-size: 1.25em; 
+            line-height: 1.7; 
+            background: rgba(0,0,0,0.5); 
+            padding: 35px; 
+            border-radius: 15px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>🌲 Tall Mommy's Forest Game 🌲</h1>
+    <button onclick="summonMommy()">Call Out Into The Forest</button>
+    <div id="scene"></div>
+
+    <script>
+        const ties = [
+            "wrists bound tightly behind your back with soft pink rope",
+            "spread-eagle between two trees with my velvet cuffs",
+            "hogtied firmly on the forest floor",
+            "suspended in a full-body rope harness from a sturdy branch",
+            "forced into a tight ball tie with straps",
+            "arms locked in a strict reverse prayer position",
+            "blindfolded and chained to a tree",
+            "thighs tied tightly together with your arms pinned" "teasing and playing with your helpless body",
+            "dominating you with her big soft ass, smothering you beneath her",
+            "dominating you with her large breasts, pressing them against your face" "cradling you possessively in her lap",
+            "pinning you down with her full weight",
+            "holding you over her shoulder like a trophy",
+            "spooning you tightly from behind while you squirm",
+            "rocking you gently in her strong arms"
+        ];
+
+        function summonMommy() {
+            const randomTie = ties ;
+            const randomAction = actions[Math.floor(Math.random() * actions.length)];
+            const randomHold = holds ;
+            
+            document.getElementById('scene').innerHTML = `
+                <p>You’re walking alone through a dark forest at night when suddenly...</p>
+                <p class="mommy">💕 A tall, powerful figure silently appears behind you. Before you can react, a strong hand covers your mouth.</p>
+                <p>"Shhh... such a cute little lost puppy," Mommy whispers in your ear, her voice low and commanding. "You’re all mine now."</p>
+                <p>She quickly ties you up with practiced skill... <strong>${randomTie}</strong>.</p>
+                <p>Completely helpless, she then begins ${randomAction}, her body pressing against yours as she takes full control.</p>
+                <p>Finally, she pulls you close and holds you tightly... <strong>${randomHold}</strong>.</p>
+                <p>"There we go," she purrs, "all tied up and nowhere to go. Mommy’s going to keep you for a long, long time..."</p>
+                <button onclick="summonMommy()">Play Again - New Random Scene</button>
+            `;
+        }
+    </script>
+</body>
+</html>
